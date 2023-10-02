@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        var planetas = ["Terra", "Marte", "Plutão", "Vênus", "Júpiter", "Saturno"];
+
+        var planetaUsuario = prompt("Digite o nome de um planeta:");
+
+        var encontrado = false;
+
+        for (var i = 0; i < planetas.length; i++) {
+            if (planetas[i] === planetaUsuario) {
+                encontrado = true;
+                break;
+            }
+        }
+
+        if (encontrado) {
+            alert("O planeta " + planetaUsuario + " está na lista de planetas.");
+        } else {
+            alert("O planeta " + planetaUsuario + " não está na lista de planetas.");
+        }
+
+    </script>
+    
+</head>
+
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var estudantes = [];
+
+        while (true) {
+            var nome = prompt("Digite o nome do estudante (ou digite 'PARE' para encerrar o cadastro):");
+
+            if (nome.toUpperCase() === "PARE") {
+                break;
+            }
+
+            estudantes.push(nome);
+        }
+
+        alert("Quantidade de estudantes cadastrados: " + estudantes.length);
+        alert("Lista de estudantes cadastrados:");
+
+        for (var i = 0; i < estudantes.length; i++) {
+            alert((i + 1) + ". " + estudantes[i]);
+        }
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
